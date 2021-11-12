@@ -60,19 +60,19 @@
 
 <body>
   <div class="grow-0 bg-gray-200 border-b border-gray-300">
-    <div class="mb-12 flex flex-col items-center">
+    <div class="mb-10 flex flex-col items-center">
       <div class="relative m-8 flex items-center">
-        <img class="w-28 h-28 p-1 bg-white rounded-full border border-gray-300 shadow-inner"
+        <img class="w-32 h-32 p-2 bg-white rounded-full border border-gray-300 shadow-inner"
           src="static/img/me-small.jpg" />
-        <div class="ml-4 relative flex flex-col items-center">
+        <div class="ml-8 relative flex flex-col items-center">
           <h1 class="text-emboss font-bold text-7xl text-gray-700 leading-none">Stu Sherwin</h1>
           <div class="absolute -bottom-6 mt-1 font-light">Web developer extraordinaire</div>
         </div>
-        <div class="absolute left-0 right-0 top-0 overflow-hidden" style="bottom: -5.1rem">
+        <div class="absolute left-0 right-0 top-0 overflow-hidden" style="bottom: -4.6rem">
           <ul class="absolute bottom-4 flex w-full justify-between tracking-wide uppercase text-gray-700">
             <li class="relative">
               <a class="hover:underline hover:text-black" href="#about">About me</a>
-              <div class="transition-transform arrow-top arrow-top-white" style="transform: translateX(0)"></div>
+              <div class="transition-transform arrow-top arrow-top-brown" style="transform: translateX(0)"></div>
             </li>
             <li class="relative"><a class="hover:underline hover:text-black" href="#contact">Contact</a>
               <div class="transition-transform arrow-top arrow-top-white" style="transform: translateX(100vw)"></div>
@@ -92,7 +92,9 @@
   </div>
   <div class="overflow-hidden">
     <div id="contents" class="relative flex transition-transform" style="transform: translateX(0)">
-      <div id="about" class="content w-screen flex-shrink-0 min-h-96 p-2 bg-white">About me</div>
+      <div id="about" class="content w-screen flex-shrink-0 min-h-96 p-2 bg-white"
+        style="background-image: url(/static/img/code.jpg); background-size: cover">About me
+      </div>
       <div id="contact" class="content w-screen flex-shrink-0 min-h-96 p-2 bg-white">My contact details</div>
       <div id="portfolio" class="content w-screen flex-shrink-0 min-h-96 p-2 bg-white">Portfolio</div>
       <div id="cv" class="content w-screen flex-shrink-0 min-h-96 p-2 bg-pink-200">CV</div>
