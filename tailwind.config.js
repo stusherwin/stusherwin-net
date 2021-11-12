@@ -17,7 +17,11 @@ module.exports = {
   },
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      brightness: {
+        '25': '.25'
+      }
+    },
 
     colors: {
       // Build your palette here

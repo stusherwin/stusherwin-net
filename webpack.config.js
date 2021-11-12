@@ -38,6 +38,13 @@ var commonConfig = {
     rules: [{
       test: /\.(eot|ttf|woff|woff2|svg)$/,
       use: 'file-loader?publicPath=../../&name=static/css/[hash].[ext]'
+    },
+    {
+      test: /\.(png|jpe?g|gif)$/i,
+      exclude: /node_modules/,
+      use: {
+        loader: "file-loader",
+      },
     }]
   },
   plugins: [

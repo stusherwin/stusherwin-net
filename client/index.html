@@ -14,7 +14,7 @@
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       let contents = document.getElementById('contents');
-      let arrows = document.querySelectorAll('.arrow-top');
+      let arrow = document.getElementById('arrow');
       let links = document.querySelectorAll('li a');
 
       let scrollToContent = id => {
@@ -24,9 +24,10 @@
           }
 
           contents.style.transform = 'translateX(' + -i + '00vw)';
-          for (j = 0; j < arrows.length; j++) {
-            arrows[j].style.transform = 'translateX(' + (-i + j) + '00vw)';
-          }
+          let rect = links[i].getBoundingClientRect();
+          console.log(rect);
+          let x = rect.x + (rect.width / 2) - 5;
+          arrow.style.transform = 'translateX(' + x + 'px)';
         }
       }
 
@@ -54,50 +55,60 @@
       reactToHashChange();
 
       window.onpopstate = reactToHashChange;
+      window.onresize = reactToHashChange;
     });
   </script>
 </head>
 
 <body>
-  <div class="grow-0 bg-gray-200 border-b border-gray-300">
-    <div class="mb-10 flex flex-col items-center">
-      <div class="relative m-8 flex items-center">
-        <img class="w-32 h-32 p-2 bg-white rounded-full border border-gray-300 shadow-inner"
-          src="static/img/me-small.jpg" />
-        <div class="ml-8 relative flex flex-col items-center">
-          <h1 class="text-emboss font-bold text-7xl text-gray-700 leading-none">Stu Sherwin</h1>
-          <div class="absolute -bottom-6 mt-1 font-light">Web developer extraordinaire</div>
-        </div>
-        <div class="absolute left-0 right-0 top-0 overflow-hidden" style="bottom: -4.6rem">
-          <ul class="absolute bottom-4 flex w-full justify-between tracking-wide uppercase text-gray-700">
-            <li class="relative">
-              <a class="hover:underline hover:text-black" href="#about">About me</a>
-              <div class="transition-transform arrow-top arrow-top-brown" style="transform: translateX(0)"></div>
-            </li>
-            <li class="relative"><a class="hover:underline hover:text-black" href="#contact">Contact</a>
-              <div class="transition-transform arrow-top arrow-top-white" style="transform: translateX(100vw)"></div>
-            </li>
-            <li class="relative"><a class="hover:underline hover:text-black" href="#portfolio">Portfolio</a>
-              <div class="transition-transform arrow-top arrow-top-white" style="transform: translateX(200vw)"></div>
-            </li>
-            <li class="relative">
-              <a class="hover:underline hover:text-black" href="#cv">CV</a>
-              <div class="transition-transform arrow-top arrow-top-pink-200" style="transform: translateX(300vw)"></div>
-            </li>
-          </ul>
-        </div>
+  <div class="relative bg-gray-200 flex flex-col items-center">
+    <div class="relative m-8 mb-12 flex items-center">
+      <img class="w-32 h-32 p-2 bg-white rounded-full border-t border-gray-300 shadow-inner"
+        src="static/img/me-small.jpg" />
+      <div class="ml-8 relative flex flex-col items-center">
+        <h1 class="text-emboss font-bold text-7xl text-gray-700 leading-none">Stu Sherwin</h1>
+        <div class="absolute -bottom-6 mt-1 font-light">Web developer extraordinaire</div>
+      </div>
+      <ul class="absolute left-0 right-0 -bottom-12 flex justify-between tracking-wide uppercase text-gray-700">
+        <li class="relative">
+          <a class="hover:underline hover:text-black" href="#about">About</a>
+        </li>
+        <li class="relative">
+          <a class="hover:underline hover:text-black" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="relative">
+          <a class="hover:underline hover:text-black" href="#cv">CV</a>
+        </li>
+        <li class="relative">
+          <a class="hover:underline hover:text-black" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="relative overflow-hidden">
+    <div id="contents" class="relative flex transition-transform" style="transform: translateX(0)">
+      <div id="about" class="content w-screen flex-shrink-0 p-2 pt-4">
+        <h2 class="p-4 text-white font-extralight text-3xl text-center">About me</h2>
+      </div>
+      <div id="portfolio" class="content w-screen flex-shrink-0 p-2 pt-4">
+        <h2 class="p-4 text-white font-extralight text-3xl text-center">Portfolio</h2>
+      </div>
+      <div id="cv" class="content w-screen flex-shrink-0 p-2 pt-4">
+        <h2 class="p-4 text-white font-extralight text-3xl text-center">CV</h2>
+      </div>
+      <div id="contact" class="content w-screen flex-shrink-0 p-2 pt-4">
+        <h2 class="p-4 text-white font-extralight text-3xl text-center">My contact details</h2>
       </div>
     </div>
-
-  </div>
-  <div class="overflow-hidden">
-    <div id="contents" class="relative flex transition-transform" style="transform: translateX(0)">
-      <div id="about" class="content w-screen flex-shrink-0 min-h-96 p-2 bg-white"
-        style="background-image: url(/static/img/code.jpg); background-size: cover">About me
+    <div class="absolute top-0 left-0 -right-0 overflow-hidden" style="height: 0.56rem">
+      <div id="arrow" class="absolute inset-0 transition-transform" style="transform: translateX(0px)">
+        <div class="absolute left-0 w-4 bottom-0 h-4 bg-gray-200 border-b border-gray-400"
+          style="transform-origin: bottom left; transform: rotate(-45deg)"></div>
+        <div class="absolute left-0 w-4 bottom-0 h-4 bg-gray-200 border-b border-gray-400"
+          style="transform-origin: bottom  right; transform: rotate(45deg)"></div>
+        <div class="absolute left-4 -right-full bottom-0 h-4 bg-gray-200 border-b border-gray-400"></div>
+        <div class="absolute -left-full right-full bottom-0 h-4 bg-gray-200 border-b border-gray-400"></div>
       </div>
-      <div id="contact" class="content w-screen flex-shrink-0 min-h-96 p-2 bg-white">My contact details</div>
-      <div id="portfolio" class="content w-screen flex-shrink-0 min-h-96 p-2 bg-white">Portfolio</div>
-      <div id="cv" class="content w-screen flex-shrink-0 min-h-96 p-2 bg-pink-200">CV</div>
     </div>
   </div>
   <div class="hidden">
