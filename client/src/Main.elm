@@ -68,4 +68,8 @@ update msg model = (model, Cmd.none)
 
 view : Model -> Html Msg
 view model =
-        div [ class "text-red-800" ] [ text "Hello world!" ]
+  div [] 
+    [ h1 [ class "text-8xl font-bold" ] [ text "Stu Sherwin"]
+    , p [] [ text "Hi there" ]
+    , img [ src "static/img/me-small.jpg" ] []
+  ]

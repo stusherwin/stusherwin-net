@@ -25,7 +25,7 @@ module.exports = {
       current: 'currentColor',
       black: colors.black,
       white: colors.white,
-      gray: colors.coolGray,
+      gray: colors.blueGray,
       // lightGray: 'colors.coolGray.200',
       // lighterGray: 'colors.coolGray.100',
       red: colors.red,
@@ -131,12 +131,17 @@ module.exports = {
       '3xl': '1.875rem',
       '4xl': '2.25rem',
       '5xl': '3rem',
-      '6xl': '4rem'
+      '6xl': '3.75rem',
+      '7xl': '4.5rem',
+      '8xl': '6rem'
     },
     minWidth: {
       '0': '0',
       '44': '11rem',
       'full': '100%',
+    },
+    minHeight: {
+      '96': '24rem'
     }
   },
   variants: {
