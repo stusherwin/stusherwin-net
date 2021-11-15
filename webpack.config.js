@@ -30,22 +30,22 @@ var commonConfig = {
     publicPath: '/'
   },
   resolve: {
-    extensions: ['.js', '.elm'],
+    extensions: ['.js'],
     modules: ['node_modules']
   },
   module: {
-    noParse: /\.elm$/,
     rules: [{
       test: /\.(eot|ttf|woff|woff2|svg)$/,
       use: 'file-loader?publicPath=../../&name=static/css/[hash].[ext]'
     },
-    {
-      test: /\.(png|jpe?g|gif)$/i,
-      exclude: /node_modules/,
-      use: {
-        loader: "file-loader",
-      },
-    }]
+      // {
+      //   test: /\.(png|jpe?g|gif)$/i,
+      //   exclude: /node_modules/,
+      //   use: {
+      //     loader: "file-loader",
+      //   },
+      //   }
+    ]
   },
   plugins: [
     new webpack.LoaderOptionsPlugin({
@@ -81,18 +81,8 @@ if (isDev === true) {
     },
     module: {
       rules: [{
-        test: /\.elm$/,
-        exclude: [/elm-stuff/, /node_modules/],
-        use: [
-          {
-            loader: 'elm-webpack-loader',
-            options: {
-              debug: true
-            }
-          }]
-      }, {
         test: /\.sc?ss$/,
-        use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
+        use: ['style-loader', { loader: 'css-loader', options: { url: false } }, 'postcss-loader', 'sass-loader']
       }]
     }
   });
@@ -107,12 +97,8 @@ if (isProd === true) {
     entry: entryPath,
     module: {
       rules: [{
-        test: /\.elm$/,
-        exclude: [/elm-stuff/, /node_modules/],
-        use: 'elm-webpack-loader'
-      }, {
         test: /\.sc?ss$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader']
+        use: [MiniCssExtractPlugin.loader, { loader: 'css-loader', options: { url: false } }, 'postcss-loader', 'sass-loader']
       }]
     },
     plugins: [

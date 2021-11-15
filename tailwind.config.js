@@ -1,4 +1,5 @@
 const colors = require('tailwindcss/colors');
+const plugin = require('tailwindcss/plugin')
 
 module.exports = {
   purge: {
@@ -19,8 +20,106 @@ module.exports = {
   theme: {
     extend: {
       brightness: {
-        '25': '.25'
-      }
+        '25': '.25',
+        '75': '.75'
+      },   
+      grayscale: {
+        '50': '50%',
+      },
+      spacing: {
+        '-9999': '-9999px',
+        '2px': '2px',
+        '-2px': '-2px',
+        '6ish': '1.56rem',
+        '-6ish': '-1.56rem',
+        '1.5ish': '0.4rem',
+        '-1.5ish': '-0.4rem',
+        '2ish': '0.56rem',
+        '-2ish': '-0.56rem',
+        '1/12': '8.333333%',
+        '2/12': '16.666667%',
+        '3/12': '25%',
+        '4/12': '33.333333%',
+        '5/12': '41.666667%',
+        '6/12': '50%',
+        '7/12': '58.333333%',
+        '8/12': '66.666667%',
+        '9/12': '75%',
+        '10/12': '83.333333%',
+        '11/12': '91.666667%',
+        '1/15': '6.666667%',
+        '2/15': '13.333333%',
+        '3/15': '20%',
+        '4/15': '26.666667%',
+        '5/15': '33.333333%',
+        '6/15': '40%',
+        '7/15': '46.666667%',
+        '8/15': '53.333333%',
+        '9/15': '60%',
+        '10/15': '66.666667%',
+        '11/15': '73.333333%',
+        '12/15': '80%',
+        '13/15': '86.666667%',
+        '14/15': '93.333333%'
+      },
+      skew: {
+       '25': '25deg',
+       '60': '60deg',
+      },
+      keyframes: {
+        // wiggle: {
+        //   '0%': { transform: 'rotate(var(--tw-rotate))' },
+        //   '50%': { transform: 'rotate(var(--tw-rotate))' },
+        //   '100%': { transform: 'rotate(calc(var(--tw-rotate) + 5deg))' }, // perspective(10rem) translateZ(1rem)' },
+        // },
+        // nonCurrentToNonCurrentHover: {
+        //   '0%': { transform: 'perspective(50rem) translateZ(calc(var(--index, 0) * -1rem)) rotate(var(--rotate, 0))' },
+        //   '100%': { transform: 'perspective(50rem) translateZ(calc(var(--index, 0) * -1rem)) translateX(1rem) translateY(-1rem) rotate(var(--rotate, 0))' }
+        // },
+        // nonCurrentHoverToNonCurrent: {
+        //   '0%': { transform: 'perspective(50rem) translateZ(calc(var(--index, 0) * -1rem)) translateX(1rem) translateY(-1rem) rotate(var(--rotate, 0))' },
+        //   '100%': { transform: 'perspective(50rem) translateZ(calc(var(--index, 0) * -1rem)) rotate(var(--rotate, 0))' }
+        // }, 
+        // nonCurrentHoverToCurrentHover: {
+        //   '0%': { transform: 'perspective(50rem) translateZ(calc(var(--index, 0) * -1rem)) translateX(1rem) translateY(-1rem) rotate(var(--rotate, 0))' },
+        //   '100%': { transform: 'perspective(50rem) translateZ(calc(var(--index, 0) * -1rem)) translateX(1rem) translateY(-1rem) rotate(var(--rotate, 0))' }
+        // },
+        // currentToCurrentHover: {
+        //   '0%': { transform: 'perspective(50rem) translateZ(calc(var(--index, 0) * -1rem)) rotate(var(--rotate, 0))' },
+        //   '100%': { transform: 'perspective(50rem) translateZ(calc(var(--index, 0) * -1rem)) translateX(1rem) translateY(-1rem) rotate(var(--rotate, 0))' }
+        // },
+        // currentHoverToCurrent: {
+        //   '0%': { transform: 'perspective(50rem) translateZ(calc(var(--index, 0) * -1rem)) translateX(1rem) translateY(-1rem) rotate(var(--rotate, 0))' },
+        //   '100%': { transform: 'perspective(50rem) translateZ(calc(var(--index, 0) * -1rem)) rotate(var(--rotate, 0))' },
+        // }
+      },
+      animation: {
+        // wiggle: 'wiggle 0.25s ease-in-out 1 forwards',
+        // nonCurrentToNonCurrentHover: 'nonCurrentToNonCurrentHover 0.25s ease-in-out 1 forwards',
+        // nonCurrentHoverToNonCurrent: 'nonCurrentHoverToNonCurrent 0.25s ease-in-out 1 forwards',
+        // nonCurrentHoverToCurrentHover: 'nonCurrentHoverToCurrentHover 0.25s ease-in-out 1 forwards',
+        // currentToCurrentHover: 'currentToCurrentHover 0.25s ease-in-out 1 forwards',
+        // currentHoverToCurrent: 'currentHoverToCurrent 0.25s ease-in-out 1 forwards'
+      },
+    },
+
+    screens: {
+      'xs': '500px',
+      // => @media (min-width: 500px) { ... }
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
     },
 
     colors: {
@@ -122,6 +221,12 @@ module.exports = {
       'inner-t-sm': 'inset 0 2px 2px 0 rgba(0, 0, 0, 0.1)',
       'inner-b-md': 'inset 0 -5px 5px 0 rgba(0, 0, 0, 0.1)',
       'inner-b-sm': 'inset 0 -2px 2px 0 rgba(0, 0, 0, 0.1)',
+      '-3': '-3px 0 10px 0px rgba(0, 0, 0, 0.5)',
+      '3': '3px 0 10px 0px rgba(0, 0, 0, 0.5)',
+      '-10': '-10px 0 10px 0px rgba(0, 0, 0, 0.5)',
+      '10': '10px 0 10px 0px rgba(0, 0, 0, 0.5)',
+      'white': '0 1px 3px 0 rgba(255, 255, 255, 0.1), 0 1px 2px 0 rgba(255, 255, 255, 0.06)',
+
     },
     fontSize: {
       '3xs': '.5rem',
@@ -150,12 +255,24 @@ module.exports = {
   },
   variants: {
     extend: {
-      margin: ['first', 'last'],
-      padding: ['first', 'last'],
-      borderRadius: ['first', 'last'],
+      // margin: ['first', 'last'],
+      // padding: ['first', 'last'],
+      // borderRadius: ['first', 'last'],
       backgroundColor: ['focus', 'group-hover', 'hover'],
-      backgroundOpacity: ['disabled'],
+      // backgroundOpacity: ['disabled'],
+      animation: ['hover'],
     }
   },
-  plugins: [],
+  plugins: [
+    plugin(function({ addUtilities }) {
+      addUtilities({
+        '.text-sideways': {
+          'writing-mode': 'vertical-rl',
+          'text-orientation': 'sideways',
+        }
+      }, {
+        variants: ['responsive']
+      })
+    })
+  ],
 }

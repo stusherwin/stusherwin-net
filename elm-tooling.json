@@ -1,5 +1,0 @@
-{
-  "entrypoints": [
-    "./client/src/Main.elm"
-  ]
-}
