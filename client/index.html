@@ -864,57 +864,84 @@
                 <div class="image-gallery">
                   <div class="mt-0 mb-8 flex-shrink-0 pt-12 pr-24 xs:mx-8 xs:pt-18 xs:pr-28">
                     <div class="images relative w-52 xs:w-64">
-                      <a href="#" class="image p-2 bg-white border border-gray-200 shadow-lg" data-caption="Hi there">
-                        <img class="w-full" src="/static/img/symptom-tracker-1.png" /></a>
-                      <a href="#" class="image p-2 bg-white border border-gray-200 shadow-lg" data-caption="Another caption">
-                        <img class="w-full" src="/static/img/symptom-tracker-2.png" /></a>
-                      <a href="#" class="image p-2 bg-white border border-gray-200 shadow-lg" data-caption="What are we like?">
-                        <img class="w-full" src="/static/img/symptom-tracker-3.png" /></a>
+                      <a href="#" class="image p-2 bg-white border border-gray-200 shadow-lg" data-caption="Day view - click on other images to see more...">
+                        <img class="w-full" src="/static/img/symptom-tracker-1.png" alt="Day view - click on other images to see more..."/></a>
+                      <a href="#" class="image p-2 bg-white border border-gray-200 shadow-lg" data-caption="Editing the options for a question with icon-based answers">
+                        <img class="w-full" src="/static/img/symptom-tracker-2.png" alt="Editing the options for a question with icon-based answers"/></a>
+                      <a href="#" class="image p-2 bg-white border border-gray-200 shadow-lg" data-caption="Building a graph from different variables">
+                        <img class="w-full" src="/static/img/symptom-tracker-3.png" alt="Building a graph from different variables"/></a>
+                      <a href="#" class="image p-2 bg-white border border-gray-200 shadow-lg" data-caption="Editing how a variable is displayed on the graph">
+                        <img class="w-full" src="/static/img/symptom-tracker-4.png" alt="Editing how a variable is displayed on the graph"/></a>
+                      </div>
                     </div>
-                  </div>
                   <div class="caption mt-0 xs:mx-8 text-center text-sm"><span>Some caption here</span></div>
                 </div>
                 <div class="flex-shrink-1">
-                  <p class="my-8 mt-0">
+                  <p class="mt-0">
                     My partner has struggled with chronic fatigue for many years and wanted an app to help
                     track her symptoms and identify possible triggers. None of the apps out there did what she wanted
                     so she asked me to build her one.
                   </p>
-                  <p class="my-8">
-                    My partner has struggled with chronic fatigue for many years and wanted an app to help
-                    track her symptoms and identify possible triggers. None of the apps out there did what she wanted
-                    so she asked me to build her one.
-                  </p>
-                  <p class="my-8">
-                    My partner has struggled with chronic fatigue for many years and wanted an app to help
-                    track her symptoms and identify possible triggers. None of the apps out there did what she wanted
-                    so she asked me to build her one.
-                  </p>
+                  <h3 class="mt-8 font-semibold">
+                    Features
+                  </h3>
+                  <ul class="mt-4">
+                    <li class="ml-4 list-disc">Create variables to track whatever you want to log every day</li>
+                    <li class="ml-4 list-disc">Combine those variables however you like and track them on a graph</li>
+                  </ul>
+                  <h3 class="mt-8 font-semibold">
+                    Coming soon
+                  </h3>
+                  <ul class="mt-4">
+                    <li class="ml-4 list-disc">Backup your data on the server (only saves locally for now)</li>
+                    <li class="ml-4 list-disc">Encrypt your data so only you can read it</li>
+                    <li class="ml-4 list-disc">Download the data so you can put it in a spreadsheet or modify and upload it</li>
+                    <li class="ml-4 list-disc">More sophisticated data analysis to show correlations between variables</li>
+                  </ul>
+                  <h3 class="mt-8 font-semibold">
+                    Where to find it
+                  </h3>
+                  <p class="mt-4 mb-8">Have a play with <a class="text-blue-600 underline hover:no-underline" href="https://symptom-tracker.stusherwin.net" target="_blank">the demo here<svg class="ml-1 h-4 w-4 inline-block relative -top-0.5 fill-current"><use href="/static/img/font-awesome-solid.svg#external-link-square-alt"></use></svg></a>, also check out <a class="text-blue-600 underline hover:no-underline" href="https://github.com/stusherwin/symptom-tracker" target="_blank">the code on GitHub<svg class="ml-1 h-4 w-4 inline-block relative -top-0.5 fill-current"><use href="/static/img/font-awesome-solid.svg#external-link-square-alt"></use></svg></a>.</p>
                 </div>
               </div>
-              <div class="my-8 -mx-4 p-4 flex flex-col bg-yellow-100 border border-yellow-300 shadow-lg md:mx-0 md:p-8">
+              <div class="my-8 -mx-4 p-4 w-full flex flex-col bg-yellow-100 border border-yellow-300 shadow-lg md:mx-0 md:p-8">
                 <h3 class="pb-1 text-lg font-semibold border-b border-gray-700">Technical details</h3>
-                <div class="flex flex-wrap items-start">
-                  <a href="#" class="pill">
+                <div class="flex flex-wrap items-baseline">
+                  Written in:
+                  <span class="pill ml-2">
                     <svg class=""><use href="#elm"></use></svg>Elm
-                  </a>
-                  <a href="#" class="pill">
+                  </span>
+                  <span class="pill">
                     <svg class=""><use href="#haskell"></use></svg>Haskell
-                  </a>
-                  <a href="#" class="pill">
+                  </span>
+                  <span class="pill">
                     <svg class=""><use href="#postgresql"></use></svg>PostgreSQL
-                  </a>
+                  </span>
                 </div>
-                <p class="mt-4 fade-out md:mt-8">
-                  I'm really into
-                  strongly-typed functional
-                  languages.
-                  It means a bit more work up front to get your code to build, but you gain so much more by being able
-                  to make big changes without introducing hard-to-fix bugs, and the end result is much more stable.
+                <p class="mt-4 md:mt-8"><!-- fade-out -->
+                  I'm really into strongly-typed functional languages. I fell in love with 
+                  <span class="pill"><svg class=""><use href="#haskell"></use></svg>Haskell</span>
+                  when I first disovered <a class="text-blue-600 underline hover:no-underline" href="http://www.learnyouahaskell.com/" target="_blank">Learn You a Haskell For Great Good<svg class="ml-1 h-4 w-4 inline-block relative -top-0.5 fill-current"><use href="/static/img/font-awesome-solid.svg#external-link-square-alt"></use></svg></a> and I've been coding in it ever since (check out <a class="text-blue-600 underline hover:no-underline" href="#contact">some of my other projects</a>).
+                  I love Haskell for how it separates pure functions from code with side-effects using monads, which really forces you to push I/O to the boundaries of your application. </p>
+                  <p class="mt-4 md:mt-8">
+                  Languages that aren't as strict allow you to get away with code that has hidden effects, which leads to unpredictability and creates complexity in managing that unpredictability.
+                  <span class="pill"><svg class=""><use href="#haskell"></use></svg>Haskell</span>
+                  forces you to deal with that complexity up front, which means a bit more work to get your code to build, but you gain so much more by being able
+                  to make sweeping changes to your codebase without introducing hard-to-fix bugs, and the end result is much more stable applications with very few runtime errors.
+                  </p>
+                  <p class="mt-4 md:mt-8">Once I learned how to do this with my server-side code, I wasn't happy with not being able to do the same for my front-end code. I found 
+                  <span class="pill"><svg class=""><use href="#react"></use></svg>React</span>
+                  and 
+                  <span class="pill"><svg class=""><use href="#typescript"></use></svg>TypeScript</span>
+                  to be a good working solution but when I discovered 
+                  <span class="pill"><svg class=""><use href="#elm"></use></svg>Elm</span>
+                  I knew I had found what I was looking for. It's not perfect and it's (intentionally) quite limited in its type system, it doesn't have a concept of monads
+                  which would make things much less verbose, but I can put up with this for the joy of writing in pure functions.
+                  </p>
                 </p>
-                <a href="#" class="expand-contract mt-4 ml-auto hover:text-black hover:underline">
+                <!-- <a href="#" class="expand-contract mt-4 ml-auto hover:text-black hover:underline">
                   <svg class="inline h-4 w-4 mr-1 relative -top-2px"><use href="/static/img/font-awesome-solid.svg#plus-circle" data-alt="/static/img/font-awesome-solid.svg#minus-circle"></use></svg><span data-alt="Hide">Show</span> techy stuff
-                </a>
+                </a> -->
               </div>
             </div>
           </div>
@@ -926,14 +953,18 @@
             <div class="p-8 flex flex-col justify-center items-center md:mx-auto lg:w-3/4 xl:w-2/3">
               <div class="flex flex-col-reverse items-center md:flex-row-reverse md:items-start">
                 <div class="image-gallery">
-                  <div class="mt-0 mb-8 flex-shrink-0 pt-12 pr-24 xs:mx-8 xs:pt-18 xs:pr-28">
+                  <div class="mt-0 mb-8 flex-shrink-0 pt-12 pr-24 xs:mx-8 xs:pt-18 xs:pr-28 md:ml-16">
                     <div class="images relative w-52 xs:w-64">
-                      <a href="#" class="image p-2 bg-white border border-gray-200 shadow-lg" data-caption="Hi there">
-                        <img class="w-full" src="/static/img/symptom-tracker-1.png" /></a>
-                      <a href="#" class="image p-2 bg-white border border-gray-200 shadow-lg" data-caption="Another caption">
-                        <img class="w-full" src="/static/img/symptom-tracker-2.png" /></a>
-                      <a href="#" class="image p-2 bg-white border border-gray-200 shadow-lg" data-caption="What are we like?">
-                        <img class="w-full" src="/static/img/symptom-tracker-3.png" /></a>
+                      <a href="#" class="image p-2 bg-white border border-gray-200 shadow-lg" data-caption="Welcome page showing list of households">
+                        <img class="w-full" src="/static/img/collective-orders-1.png" alt="Welcome page showing list of households"/></a>
+                      <a href="#" class="image p-2 bg-white border border-gray-200 shadow-lg" data-caption="Individual household page">
+                        <img class="w-full" src="/static/img/collective-orders-2.png" alt="Individual household page"/></a>
+                      <a href="#" class="image p-2 bg-white border border-gray-200 shadow-lg" data-caption="Current order in progress for a household">
+                        <img class="w-full" src="/static/img/collective-orders-3.png" alt="Current order in progress for a household"/></a>
+                      <a href="#" class="image p-2 bg-white border border-gray-200 shadow-lg" data-caption="Responding to an update of the product catalogue">
+                        <img class="w-full" src="/static/img/collective-orders-4.png" alt="Responding to an update of the product catalogue"/></a>
+                      <a href="#" class="image p-2 bg-white border border-gray-200 shadow-lg" data-caption="Product catalogue">
+                        <img class="w-full" src="/static/img/collective-orders-5.png" alt="Product catalogue"/></a>
                     </div>
                   </div>
                   <div class="caption mt-0 text-center text-sm xs:mx-8">
@@ -941,46 +972,71 @@
                   </div>
                 </div>
                 <div class="flex-shrink-1 text-white">
-                  <p class="my-4 mt-0 -mx-4 p-4 bg-black bg-opacity-70 border-t border-gray-800">
-                    My partner has struggled with chronic fatigue for many years and wanted an app to help
-                    track her symptoms and identify possible triggers. None of the apps out there did what she wanted
-                    so she asked me to build her one.
+                  <p class="mt-0 -mx-4 p-4 bg-black bg-opacity-70 border-t border-gray-800">
+                    You can tell I'm terrible at naming things ... 😉
                   </p>
-                  <p class="my-4 -mx-4 p-4 bg-black bg-opacity-70 border-t border-gray-800">
-                    My partner has struggled with chronic fatigue for many years and wanted an app to help
-                    track her symptoms and identify possible triggers. None of the apps out there did what she wanted
-                    so she asked me to build her one.
+                  <p class="mt-4 -mx-4 p-4 bg-black bg-opacity-70 border-t border-gray-800">
+                    I live in a shared house and we've set up a food group with a few other houses. We buy food in bulk from wholesalers and divide it amongst the houses. It was getting tricky to manage the orders on a spreadsheet so I built an app to do it.
                   </p>
-                  <p class="my-4 -mx-4 p-4 bg-black bg-opacity-70 border-t border-gray-800">
-                    My partner has struggled with chronic fatigue for many years and wanted an app to help
-                    track her symptoms and identify possible triggers. None of the apps out there did what she wanted
-                    so she asked me to build her one.
-                  </p>
+                  <div class="mt-4 -mx-4 p-4 bg-black bg-opacity-70 border-t border-gray-800">
+                    <h3 class="font-semibold">
+                      Features
+                    </h3>
+                    <ul class="mt-4">
+                      <li class="ml-4 list-disc">Add items to your household's order pulled from the wholesaler's website</li>
+                      <li class="ml-4 list-disc">Place a single order to the wholesaler that combines all the orders from individual households</li>
+                      <li class="ml-4 list-disc">Track payments and balances for each household</li>
+                      <li class="ml-4 list-disc">Upload the order invoice to adjust the order totals if items are missing or prices have changed</li>
+                    </ul>
+                  </div>
+                  <div class="mt-4 -mx-4 p-4 bg-black bg-opacity-70 border-t border-gray-800">
+                    <h3 class="font-semibold">
+                      Coming soon
+                    </h3>
+                    <ul class="mt-4">
+                      <li class="ml-4 list-disc">Pay directly within the app using a payment provider such as Stripe</li>
+                      <li class="ml-4 list-disc">Place orders with other wholesalers</li>
+                    </ul>
+                  </div>
+                  <div class="my-4 -mx-4 p-4 bg-black bg-opacity-70 border-t border-gray-800">
+                    <h3 class="font-semibold">
+                      Where to find it
+                    </h3>
+                    <p class="mt-4">Have a play with <a class="text-red-400 underline hover:no-underline" href="https://collective-orders.stusherwin.net/g/DEMO" target="_blank">the demo here<svg class="ml-1 h-4 w-4 inline-block relative -top-0.5 fill-current"><use href="/static/img/font-awesome-solid.svg#external-link-square-alt"></use></svg></a>, also check out <a class="text-red-400 underline hover:no-underline" href="https://github.com/stusherwin/usma" target="_blank">the code on GitHub<svg class="ml-1 h-4 w-4 inline-block relative -top-0.5 fill-current"><use href="/static/img/font-awesome-solid.svg#external-link-square-alt"></use></svg></a>.</p>
+                  </div>
                 </div>
               </div>
-              <div class="my-8 -mx-4 p-4 flex flex-col text-gray-700 bg-yellow-100 border border-yellow-300 shadow-lg md:mx-0 md:p-8">
+              <div class="my-8 -mx-4 p-4 w-full flex flex-col text-gray-700 bg-yellow-100 border border-yellow-300 shadow-lg md:mx-0 md:p-8">
                 <h3 class="pb-1 text-lg font-semibold border-b border-gray-700">Technical details</h3>
-                <div class="flex flex-wrap items-start">
-                  <a href="#" class="pill">
-                    <svg class=""><use href="#elm"></use></svg>Elm
-                  </a>
-                  <a href="#" class="pill">
+                <div class="flex flex-wrap items-baseline">
+                  Written in:
+                  <span class="pill ml-2">
+                    <svg class=""><use href="#react"></use></svg>React
+                  </span>
+                  <span class="pill">
+                    <svg class=""><use href="#typescript"></use></svg>TypeScript
+                  </span>
+                  <span class="pill">
                     <svg class=""><use href="#haskell"></use></svg>Haskell
-                  </a>
-                  <a href="#" class="pill">
+                  </span>
+                  <span class="pill">
                     <svg class=""><use href="#postgresql"></use></svg>PostgreSQL
-                  </a>
+                  </span>
                 </div>
-                <p class="mt-4 fade-out md:mt-8">
-                  I'm really into
-                  strongly-typed functional
-                  languages.
-                  It means a bit more work up front to get your code to build, but you gain so much more by being able
-                  to make big changes without introducing hard-to-fix bugs, and the end result is much more stable.
+                <p class="mt-4 md:mt-8"><!-- fade-out -->
+                  Before I discovered <span class="pill"><svg class=""><use href="#elm"></use></svg>Elm</span> 
+                  I loved <span class="pill"><svg class=""><use href="#react"></use></svg>React</span> 
+                  for it's functional data flow - components are rendered from state, and actions update the state, not the components. This eliminates a lot of the  complexity from state management, and with 
+                  <span class="pill"><svg class=""><use href="#typescript"></use></svg>TypeScript</span>
+                  providing type-safety it's a pretty powerful combination. 
                 </p>
-                <a href="#" class="expand-contract mt-4 ml-auto hover:text-black hover:underline">
+                <p class="mt-4 md:mt-8">
+                  However, I don't think it goes quite far enough - <span class="pill"><svg class=""><use href="#elm"></use></svg>Elm</span>
+                   also has the type safety but it pushes the functional data flow to its logical conclusion - everything is a pure function!
+                </p>
+                <!-- <a href="#" class="expand-contract mt-4 ml-auto hover:text-black hover:underline">
                   <svg class="inline h-4 w-4 mr-1 relative -top-2px"><use href="/static/img/font-awesome-solid.svg#plus-circle" data-alt="/static/img/font-awesome-solid.svg#minus-circle"></use></svg><span data-alt="Hide">Show</span> techy stuff
-                </a>
+                </a> -->
               </div>
             </div>
           </div>
@@ -1019,57 +1075,69 @@
                 <div class="image-gallery">
                   <div class="mt-0 mb-8 flex-shrink-0 pt-12 pr-24 xs:mx-8 xs:pt-18 xs:pr-28">
                     <div class="images relative w-52 xs:w-64">
-                      <a href="#" class="image p-2 bg-white border border-gray-200 shadow-lg" data-caption="Hi there">
-                        <img class="w-full" src="/static/img/symptom-tracker-1.png" /></a>
-                      <a href="#" class="image p-2 bg-white border border-gray-200 shadow-lg" data-caption="Another caption">
-                        <img class="w-full" src="/static/img/symptom-tracker-2.png" /></a>
-                      <a href="#" class="image p-2 bg-white border border-gray-200 shadow-lg" data-caption="What are we like?">
-                        <img class="w-full" src="/static/img/symptom-tracker-3.png" /></a>
+                      <a href="#" class="image p-2 bg-white border border-gray-200 shadow-lg" data-caption="List of volunteers">
+                        <img class="w-full" src="/static/img/night-shelter-rota-1.png" alt="List of volunteers" /></a>
+                      <a href="#" class="image p-2 bg-white border border-gray-200 shadow-lg" data-caption="Rota view for an individual volunteer, adding yourself to a shift">
+                        <img class="w-full" src="/static/img/night-shelter-rota-2.png" alt="Rota view for an individual volunteer, adding yourself to a shift" /></a>
+                      <a href="#" class="image p-2 bg-white border border-gray-200 shadow-lg" data-caption="Pop-up showing volunteer details">
+                        <img class="w-full" src="/static/img/night-shelter-rota-3.png" alt="Pop-up showing volunteer details" /></a>
+                      <a href="#" class="image p-2 bg-white border border-gray-200 shadow-lg" data-caption="Editing volunteer details">
+                        <img class="w-full" src="/static/img/night-shelter-rota-4.png" alt="Editing volunteer details" /></a>
+                      </div>
                     </div>
-                  </div>
                   <div class="caption mt-0 xs:mx-8 text-center text-sm text-white text-shadow-lg text-shadow-blue-600"><span>Some caption here</span></div>
                 </div>
                 <div class="flex-shrink-1 text-white text-shadow-lg text-shadow-blue-600">
                   <p class="my-8 mt-0">
-                    My partner has struggled with chronic fatigue for many years and wanted an app to help
-                    track her symptoms and identify possible triggers. None of the apps out there did what she wanted
-                    so she asked me to build her one.
+                    I volunteer at a night shelter for refugees and asylum seekers. We were using Doodle to plan shifts for volunteers but it wasn't flexible enough for our needs.
                   </p>
                   <p class="my-8">
-                    My partner has struggled with chronic fatigue for many years and wanted an app to help
-                    track her symptoms and identify possible triggers. None of the apps out there did what she wanted
-                    so she asked me to build her one.
+                    We wanted to be able to track whether a volunteer was doing an evening or overnight shift, whether they were comfortable on their own or needed someone with them, whether a shift had too many or not enough volunteers. I ended up creating an app to manage it, which everyone was really happy with.
                   </p>
-                  <p class="my-8">
-                    My partner has struggled with chronic fatigue for many years and wanted an app to help
-                    track her symptoms an d identify possible triggers. None of the apps out there did what she wanted
-                    so she asked me to build her one.
-                  </p>
+                  <h3 class="mt-8 font-semibold">
+                    Features
+                  </h3>
+                  <ul class="mt-4">
+                    <li class="ml-4 list-disc">Add/edit your own shifts on the rota, and your shift preferences</li>
+                    <li class="ml-4 list-disc">View other people's shifts on the rota, and see their preferences</li>
+                    <li class="ml-4 list-disc">See an alert if a shift doesn't have enough volunteers</li>
+                  </ul>
+                  <h3 class="mt-8 font-semibold">
+                    Where to find it
+                  </h3>
+                  <p class="mt-4 mb-8">Have a play with <a class="text-yellow-400 underline hover:no-underline" href="http://rota.coventrynightshelter.org.uk/r/DEMO" target="_blank">the demo here<svg class="ml-1 h-4 w-4 inline-block relative -top-0.5 fill-current"><use href="/static/img/font-awesome-solid.svg#external-link-square-alt"></use></svg></a>, also check out <a class="text-yellow-400 underline hover:no-underline" href="https://github.com/stusherwin/night-shelter-rota" target="_blank">the code on GitHub<svg class="ml-1 h-4 w-4 inline-block relative -top-0.5 fill-current"><use href="/static/img/font-awesome-solid.svg#external-link-square-alt"></use></svg></a>.</p>
                 </div>
               </div>
-              <div class="my-8 -mx-4 p-4 flex flex-col bg-yellow-100 border border-yellow-300 shadow-lg md:mx-0 md:p-8">
+              <div class="my-8 -mx-4 w-full p-4 flex flex-col bg-yellow-100 border border-yellow-300 shadow-lg md:mx-0 md:p-8">
                 <h3 class="pb-1 text-lg font-semibold border-b border-gray-700">Technical details</h3>
-                <div class="flex flex-wrap items-start">
-                  <a href="#" class="pill">
-                    <svg class=""><use href="#elm"></use></svg>Elm
-                  </a>
-                  <a href="#" class="pill">
+                <div class="flex flex-wrap items-baseline">
+                  Written in:
+                  <span class="pill ml-2">
+                    <svg class=""><use href="#react"></use></svg>React
+                  </span>
+                  <span class="pill">
+                    <svg class=""><use href="#typescript"></use></svg>TypeScript
+                  </span>
+                  <span class="pill">
                     <svg class=""><use href="#haskell"></use></svg>Haskell
-                  </a>
-                  <a href="#" class="pill">
+                  </span>
+                  <span class="pill">
                     <svg class=""><use href="#postgresql"></use></svg>PostgreSQL
-                  </a>
-                </div>`
-                <p class="mt-4 fade-out md:mt-8">
-                  I'm really into
-                  strongly-typed functional
-                  languages.
-                  It means a bit more work up front to get your code to build, but you gain so much more by being able
-                  to make big changes without introducing hard-to-fix bugs, and the end result is much more stable.
+                  </span>
+                </div>
+                <p class="mt-4 md:mt-8"><!-- fade-out -->
+                  This was the first web app I wrote in
+                  <span class="pill"><svg class=""><use href="#haskell"></use></svg>Haskell</span>
+                   - I had been messing about with it for years and loved it, but had never written a web app with it. I originally wrote the front end in 
+                  <span class="pill"><svg class=""><use href="#purescript"></use></svg>PureScript</span>
+                  which was really fun to work in as it's so similar to Haskell, but it was way too slow on mobile devices at the time so I had to rewrite it in 
+                  <span class="pill"><svg class=""><use href="#react"></use></svg>React</span>
+                   and 
+                  <span class="pill"><svg class=""><use href="#typescript"></use></svg>TypeScript</span>.
                 </p>
-                <a href="#" class="expand-contract mt-4 ml-auto hover:text-black hover:underline">
+                <!-- <a href="#" class="expand-contract mt-4 ml-auto hover:text-black hover:underline">
                   <svg class="inline h-4 w-4 mr-1 relative -top-2px"><use href="/static/img/font-awesome-solid.svg#plus-circle" data-alt="/static/img/font-awesome-solid.svg#minus-circle"></use></svg><span data-alt="Hide">Show</span> techy stuff
-                </a>
+                </a> -->
               </div>
             </div>
           </div>
@@ -1279,19 +1347,27 @@
 
               <div class="md:pr-10">
                 <h3 class="mb-4 md:absolute md:right-4 md:top-4 md:bottom-4 md:mb-0 font-pcb md:text-sideways text-xs text-white uppercase">Warwick Uni</h3>
-                <p class="text-gray-200">Computer Science at Warwick was quite academic, but I learnt a lot of concepts which have really helped me in the way I approach software development - such as algorithmic complexity, computer architecture, logic, functional programming, OOP.</p>
+                <p class="text-gray-200">Studying Computer Science at Warwick University I learnt a lot of concepts which have really helped me in the way I approach software development, 
+                        such as algorithmic complexity, computer architecture, logic, functional programming, OOP, database design, artificial intelligence, compiler design, computer graphics.</p>
                 <p class="text-gray-200 mt-4">For my final year project I built a neural network in Java and tried to teach it music harmony.</p>
               </div>
-              <div class="mt-4 -mx-4 -mb-4 p-4 pt-2 flex flex-wrap items-baseline border-t border-gray-700">
+              <div class="mt-4 -mx-4 -mb-4 p-4 pt-2 flex flex-wrap items-baseline border-t border-gray-900">
+                <h4 class="w-full text-xs text-gray-300 uppercase tracking-wider mb-2 mt-2">Qualifications</h4>
+                <span class="pill-dark">
+                  BSc (Hons) Computer Science
+                </span>
+              </div>
+              <div class="mt-4 -mx-4 -mb-4 p-4 pt-2 flex flex-wrap items-baseline border-t border-gray-900">
                 <h4 class="w-full text-xs text-gray-300 uppercase tracking-wider mb-2 mt-2">Technologies</h4>
-                <a href="#" class="pill-dark">
+                <span class="pill-dark">
                   <svg><use href="#java"></use></svg>Java
-                </a>
-                <a href="#" class="pill-dark">
+                </span>
+                <span class="pill-dark">
                   <svg><use href="#sml"></use></svg>SML
-                </a>
-                <a href="#" class="pill-dark">
-                  <svg class="inline h-5 w-5 mr-2  "><use href="#prolog"></use></svg>Prolog</a>
+                </span>
+                <span class="pill-dark">
+                  <svg class="inline h-5 w-5 mr-2  "><use href="#prolog"></use></svg>Prolog
+                </span>
               </div>
             </div>
           </div>
@@ -1540,31 +1616,49 @@
 
               <div class="md:pr-10">
                 <h3 class="mb-4 md:absolute md:right-4 md:top-4 md:bottom-4 md:mb-0 font-pcb md:text-sideways text-xs text-white uppercase">Big Picture Interactive</h3>
-                <p class="text-gray-200">I hadn't done much on the web by this point apart from dabbling a bit in HTML and Java applets(!). Big Picture was where I learnt web development, building small promotional websites, taking a design and building the front-end and the back-end either from scratch or using our custom built CRM.</p>
+                <p class="text-gray-200">My first dev job was junior developer at digital agency Big Picture Interactive, building websites in ColdFusion, Classic ASP and ASP.NET
+                  ASP.NET was just getting big and we had our own custom CRM system built in it which I helped to adapt and extend for different customers.</p>
+                  <p class="text-gray-200 mt-4">I built lots of fun promotional websites, taking what the designers produced and building out the front-end and back-end.</p>
               </div>
-              <div class="mt-4 -mx-4 -mb-4 p-4 pt-2 flex flex-wrap items-baseline border-t border-gray-700">
+              <div class="mt-4 -mx-4 -mb-4 p-4 pt-2 flex flex-wrap items-baseline border-t border-gray-900">
+                <h4 class="w-full text-xs text-gray-300 uppercase tracking-wider mb-2 mt-2">Experience</h4>
+                <span class="pill-dark">
+                  Server-side development
+                </span>
+                <span class="pill-dark">
+                  Client-side development
+                </span>
+                <span class="pill-dark">
+                  Database design
+                </span>
+                <span class="pill-dark">
+                  Pixel-perfect design implementation
+                </span>
+              </div>
+              <div class="mt-4 -mx-4 -mb-4 p-4 pt-2 flex flex-wrap items-baseline border-t border-gray-900">
                 <h4 class="w-full text-xs text-gray-300 uppercase tracking-wider mb-2 mt-2">Technologies</h4>
-                <a href="#" class="pill-dark">
-                  <svg><use href="#dotnet"></use></svg>ASP.NET
-                </a>
-                <a href="#" class="pill-dark">
-                  <svg><use href="#dotnet"></use></svg>C#
-                </a>
-                <a href="#" class="pill-dark">
+                <span class="pill-dark">
                   <svg><use href="#html"></use></svg>HTML
-                </a>
-                <a href="#" class="pill-dark">
+                </span>
+                <span class="pill-dark">
                   <svg><use href="#css"></use></svg>CSS
-                </a>
-                <a href="#" class="pill-dark">
+                </span>
+                <span class="pill-dark">
                   <svg><use href="#javascript"></use></svg>Javascript
-                </a>
-                <a href="#" class="pill-dark">
-                  <svg><use href="#sqlserver"></use></svg>SQL Server
-                </a>
-                <a href="#" class="pill-dark">
+                </span>
+                <span class="pill-dark">
+                  <svg><use href="#dotnet"></use></svg>ASP.NET
+                </span>
+                <span class="pill-dark">
+                  <svg><use href="#dotnet"></use></svg>C#
+                </span>
+                <span class="pill-dark">
                   <svg><use href="#coldfusion"></use></svg>ColdFusion
-                </a>
+                </span>
+                <span class="pill-dark">
+                  <svg><use href="#sqlserver"></use></svg>SQL Server
+                </span>
+                
               </div>
             </div>
           </div>
@@ -1813,20 +1907,38 @@
 
               <div class="md:pr-10">
                 <h3 class="mb-4 md:absolute md:right-4 md:top-4 md:bottom-4 md:mb-0 font-pcb md:text-sideways text-xs text-white uppercase">Trutac Ltd</h3>
-                <p class="text-gray-200">At Trutac it was writing Windows Forms software to do tacho  graph analysis. Tachographs are devices that record truck drivers' speed and driving time onto paper discs, which were scanned in and analysed with our software to check if they were keeping to working time regulations.</p>
-                <p class="text-gray-200 mt-4"></p>The two main things I did here was build an online update system for the software, and write a custom ORM tool that streamlined a lot of the database access code.</p>
+                <p class="text-gray-200">
+                  Trutac specialised in tachograph analysis, processing paper and digital tachographs from haulage companies tracking their drivers' speed and working hours.
+                  I was involved in building an system for depots with limited internet connections to get automatic updates of the software.</p>
+
+                <p class="text-gray-200 mt-4"></p>While I was there, I noticed there was a lot of duplicated database code and was able to extract this into a custom ORM tool which simplified a lot of the code and made it much easier to reason about.</p>
               </div>
-              <div class="mt-4 -mx-4 -mb-4 p-4 pt-2 flex flex-wrap items-baseline border-t border-gray-700">
+              <div class="mt-4 -mx-4 -mb-4 p-4 pt-2 flex flex-wrap items-baseline border-t border-gray-900">
+                <h4 class="w-full text-xs text-gray-300 uppercase tracking-wider mb-2 mt-2">Experience</h4>
+                <span class="pill-dark">
+                  Desktop development
+                </span>
+                <span class="pill-dark">
+                  Networking
+                </span>
+                <span class="pill-dark">
+                  Refactoring
+                </span>
+                <span class="pill-dark">
+                  Software architecture
+                </span>
+              </div>
+              <div class="mt-4 -mx-4 -mb-4 p-4 pt-2 flex flex-wrap items-baseline border-t border-gray-900">
                 <h4 class="w-full text-xs text-gray-300 uppercase tracking-wider mb-2 mt-2">Technologies</h4>
-                <a href="#" class="pill-dark">
+                <span class="pill-dark">
                   <svg><use href="#dotnet"></use></svg>C#
-                </a>
-                <a href="#" class="pill-dark">
+                </span>
+                <span class="pill-dark">
                   <svg><use href="#dotnet"></use></svg>WinForms
-                </a>
-                <a href="#" class="pill-dark">
+                </span>
+                <span class="pill-dark">
                   <svg><use href="#sqlserver"></use></svg>SQL Server
-                </a>              
+                </span>              
               </div>
             </div>
           </div>
@@ -2075,34 +2187,51 @@
 
               <div class="md:pr-10">
                 <h3 class="mb-4 md:absolute md:right-4 md:top-4 md:bottom-4 md:mb-0 font-pcb md:text-sideways text-xs text-white uppercase">Exasoft Plc</h3>
-                <p class="text-gray-200">Exasoft had bought out a company that had an app built in Ruby on Rails for managing university fundraising campaigns. My job was to port this app into ASP.NET MVC and then extend it with extra features such as as user permissions system. So I had a lot of fun learning both those technologies.</p>
+                <p class="text-gray-200">Exasoft had bought out a company that had an app built in Ruby on Rails for managing university fundraising campaigns. 
+                  My job was to port this app into ASP.NET and then extend it with new features such as a user permissions system. This was shortly after ASP.NET MVC
+                  was released, and it was a great fit for a port of a Rails app.</p>
               </div>
-              <div class="mt-4 -mx-4 -mb-4 p-4 pt-2 flex flex-wrap items-baseline border-t border-gray-700">
+              <div class="mt-4 -mx-4 -mb-4 p-4 pt-2 flex flex-wrap items-baseline border-t border-gray-900">
+                <h4 class="w-full text-xs text-gray-300 uppercase tracking-wider mb-2 mt-2">Experience</h4>
+                <span class="pill-dark">
+                  Server-side development
+                </span>
+                <span class="pill-dark">
+                  Client-side development
+                </span>
+                <span class="pill-dark">
+                  Database design
+                </span>
+                <span class="pill-dark">
+                  Software architecture
+                </span>
+              </div>
+              <div class="mt-4 -mx-4 -mb-4 p-4 pt-2 flex flex-wrap items-baseline border-t border-gray-900">
                 <h4 class="w-full text-xs text-gray-300 uppercase tracking-wider mb-2 mt-2">Technologies</h4>
-                <a href="#" class="pill-dark">
-                  <svg><use href="#dotnet"></use></svg>C#
-                </a>
-                <a href="#" class="pill-dark">
-                  <svg><use href="#dotnet"></use></svg>ASP.NET MVC
-                </a>
-                <a href="#" class="pill-dark">
+                <span class="pill-dark">
                   <svg><use href="#html"></use></svg>HTML
-                </a>
-                <a href="#" class="pill-dark">
+                </span>
+                <span class="pill-dark">
                   <svg><use href="#css"></use></svg>CSS
-                </a>
-                <a href="#" class="pill-dark">
+                </span>
+                <span class="pill-dark">
                   <svg><use href="#javascript"></use></svg>JavaScript
-                </a>
-                <a href="#" class="pill-dark">
-                  <svg><use href="#sqlserver"></use></svg>SQL Server
-                </a>
-                <a href="#" class="pill-dark">
+                </span>
+                <span class="pill-dark">
+                  <svg><use href="#dotnet"></use></svg>C#
+                </span>
+                <span class="pill-dark">
+                  <svg><use href="#dotnet"></use></svg>ASP.NET MVC
+                </span>
+                <span class="pill-dark">
                   <svg><use href="#rails"></use></svg>Rails
-                </a>
-                <a href="#" class="pill-dark">
+                </span>
+                <span class="pill-dark">
+                  <svg><use href="#sqlserver"></use></svg>SQL Server
+                </span>
+                <span class="pill-dark">
                   <svg><use href="#mysql"></use></svg>MySQL
-                </a>
+                </span>
               </div>
             </div>
           </div>
@@ -2351,32 +2480,46 @@
 
               <div class="md:pr-10">
                 <h3 class="mb-4 md:absolute md:right-4 md:top-4 md:bottom-4 md:mb-0 font-pcb md:text-sideways text-xs text-white uppercase">Smart</h3>
-                <p class="text-gray-200">I joined Smart particularly because they were an "Agile" software house that were big on Test Driven Development. I'd been reading up on those for the past year or so and wanted to work somewhere I could learn from experienced people. It turned out not to be that simple - let's just say I learnt TDD by learning how not to do it! Which is probably just as useful ...</p>
-                <p class="text-gray-200 mt-4">Smart's thing was rostering software to manage wards for the NHS. My thing was to replace parts of a complex legacy system with a new layer using Domain Driven Design techniques.</p>
+                <p class="text-gray-200">I'd been reading up on Test-Driven Development (TDD) and Agile software techniques for the past year or so in my spare time and wanted to work 
+                  somewhere I could learn from experienced people. Smart made rostering software to manage wards for NHS trusts, and they were starting to use SCRUM and Agile methodologies. I learnt a lot about how Agile works in the real world, 
+                  and how mocking tools can counteract the benefits of TDD by being too powerful.</p>
+                  <p class="text-gray-200 mt-4">While I was there I worked on replacing parts of a complex legacy system with a new layer using Domain-Driven Design techniques, supported by an extensive test framework.</p>
               </div>
-              <div class="mt-4 -mx-4 -mb-4 p-4 pt-2 flex flex-wrap items-baseline border-t border-gray-700">
+              <div class="mt-4 -mx-4 -mb-4 p-4 pt-2 flex flex-wrap items-baseline border-t border-gray-900">
+                <h4 class="w-full text-xs text-gray-300 uppercase tracking-wider mb-2 mt-2">Experience</h4>
+                <span class="pill-dark">
+                  Desktop development
+                </span>
+                <span class="pill-dark">
+                  Database design
+                </span>
+                <span class="pill-dark">
+                  Software architecture
+                </span>
+                <span class="pill-dark">
+                  Agile/SCRUM
+                </span>
+                <span class="pill-dark">
+                  Test-Driven Development
+                </span>
+                <span class="pill-dark">
+                  Domain-Driven Design
+                </span>
+              </div>
+              <div class="mt-4 -mx-4 -mb-4 p-4 pt-2 flex flex-wrap items-baseline border-t border-gray-900">
                 <h4 class="w-full text-xs text-gray-300 uppercase tracking-wider mb-2 mt-2">Technologies</h4>
-                <a href="#" class="pill-dark">
+                <span class="pill-dark">
                   <svg><use href="#dotnet"></use></svg>C#
-                </a>
-                <a href="#" class="pill-dark">
+                </span>
+                <span class="pill-dark">
                   <svg><use href="#dotnet"></use></svg>WinForms
-                </a>
-                <a href="#" class="pill-dark">
+                </span>
+                <span class="pill-dark">
                   <svg><use href="#dotnet"></use></svg>Entity Framework
-                </a>
-                <a href="#" class="pill-dark">
+                </span>
+                <span class="pill-dark">
                   <svg><use href="#sqlserver"></use></svg>SQL Server
-                </a>
-                <a href="#" class="pill-dark">
-                  Agile
-                </a>
-                <a href="#" class="pill-dark">
-                  TDD
-                </a>
-                <a href="#" class="pill-dark">
-                  DDD
-                </a>
+                </span>
               </div>
             </div>
           </div>
@@ -2625,51 +2768,80 @@
 
               <div class="md:pr-10">
                 <h3 class="mb-4 md:absolute md:right-4 md:top-4 md:bottom-4 md:mb-0 font-pcb md:text-sideways text-xs text-white uppercase">Configit</h3>
-                <p class="text-gray-200">Configit make software to solve configuration problems, such as when you buy a car and you select one of the options, that option opens up new options and closes off others - how do you know if the rules are consistent and you can always choose a valid set of options? Their technology can verify this analytically.
-                  <p class="text-gray-200 mt-4">It's also another "Agile" shop, with emphasis on TDD and some Extreme Programming ideas like pair programming.</p>
-                  <p class="text-gray-200 mt-4">I worked on various parts of their main web app for Jaguar Land Rover that uses Configit's technology to manage the conceptual design process for their new cars. I spent a big chunk of this time developing a task runner system to distribute intensive tasks across a network of computers.</p>
+                <p class="text-gray-200">Configit make software to solve configuration problems. For example, when buying a car you have a set of options, 
+                  and selecting any one of the options opens up new options and closes off others. For a large number of options and rules this becomes unmanageable very quickly, and
+                  you need to be able to know if the rules are consistent and you can always choose a valid set of options. Their technology can verify this analytically.
+                  <p class="text-gray-200 mt-4">It's also another Agile shop, with emphasis on TDD and some Extreme Programming ideas like pair programming. We quite often paired on complex tasks which was really challenging and tiring but also eye-opening.</p>
+                  <p class="text-gray-200 mt-4">I worked on various parts of their main web app for Jaguar Land Rover that uses Configit's technology to manage the conceptual design process for their new cars. 
+                    I spent a big chunk of this time developing a task runner system to distribute intensive tasks across a network of computers.</p>
                   <p class="text-gray-200 mt-4">Working here gave me a lot of insight into when TDD works well and when it doesn't, e.g. having a comprehensive set of tests around the boundaries of an application (not the internals) makes a huge difference to your confidence in making changes. But there's also times when it will hold you back, e.g. if the app is at a very experimental stage. There's a time and place for every technique but the key is not to be religious about anything.</p>
-                  <p class="text-gray-200 mt-4">By this point I had discovered co-operatives, realised I no longer wanted to work in the private sector and decided to take some time to focus on open-source software I was building on in my spare time, and to figure out what I wanted to do next.</p>
                 </div>
-                <div class="mt-4 -mx-4 -mb-4 p-4 pt-2 flex flex-wrap items-baseline border-t border-gray-700">
+                <div class="mt-4 -mx-4 -mb-4 p-4 pt-2 flex flex-wrap items-baseline border-t border-gray-900">
+                  <h4 class="w-full text-xs text-gray-300 uppercase tracking-wider mb-2 mt-2">Experience</h4>
+                  <span class="pill-dark">
+                    Server-side development
+                  </span>
+                  <span class="pill-dark">
+                    Client-side development
+                  </span>
+                  <span class="pill-dark">
+                    Database design
+                  </span>
+                  <span class="pill-dark">
+                    Software architecture
+                  </span>
+                  <span class="pill-dark">
+                    Domain-Driven Design
+                  </span>
+                  <span class="pill-dark">
+                    Agile/SCRUM
+                  </span>
+                  <span class="pill-dark">
+                    Test-Driven Development
+                  </span>
+                  <span class="pill-dark">
+                    Pair programming
+                  </span>
+                  <span class="pill-dark">
+                    Business analysis
+                  </span>
+                  <span class="pill-dark">
+                    Requirements gathering
+                  </span>
+                  <span class="pill-dark">
+                    Estimation and quotes
+                  </span>
+                  </div>
+                <div class="mt-4 -mx-4 -mb-4 p-4 pt-2 flex flex-wrap items-baseline border-t border-gray-900">
                   <h4 class="w-full text-xs text-gray-300 uppercase tracking-wider mb-2 mt-2">Technologies</h4>
-                  <a href="#" class="pill-dark">
-                    <svg class="  "><use href="#dotnet"></use></svg>C#
-                  </a>
-                  <a href="#" class="pill-dark">
-                    <svg><use href="#dotnet"></use></svg>ASP.NET MVC
-                  </a>
-                  <a href="#" class="pill-dark">
+                  <span class="pill-dark">
                     <svg><use href="#html"></use></svg>HTML
-                  </a>
-                  <a href="#" class="pill-dark">
+                  </span>
+                  <span class="pill-dark">
                     <svg><use href="#css"></use></svg>CSS
-                  </a>
-                  <a href="#" class="pill-dark">
+                  </span>
+                  <span class="pill-dark">
                     <svg><use href="#javascript"></use></svg>JavaScript
-                  </a>
-                  <a href="#" class="pill-dark">
+                  </span>
+                  <span class="pill-dark">
                     <svg><use href="#typescript"></use></svg>TypeScript
-                  </a>
-                  <a href="#" class="pill-dark">
+                  </span>
+                  <span class="pill-dark">
                     <svg><use href="#angular"></use></svg>Angular
-                  </a>
-                  <a href="#" class="pill-dark">
+                  </span>
+                  <span class="pill-dark">
                     <svg><use href="#react"></use></svg>React
-                  </a>
-                  <a href="#" class="pill-dark">
+                  </span>
+                  <span class="pill-dark">
+                    <svg><use href="#dotnet"></use></svg>ASP.NET MVC
+                  </span>
+                  <span class="pill-dark">
+                    <svg class="  "><use href="#dotnet"></use></svg>C#
+                  </span>
+                  <span class="pill-dark">
                     <svg><use href="#sqlserver"></use></svg>SQL Server
-                  </a>
-                  <a href="#" class="pill-dark">
-                    Agile
-                  </a>
-                  <a href="#" class="pill-dark">
-                    TDD
-                  </a>
-                  <a href="#" class="pill-dark">
-                    DDD
-                  </a>
-                </div>  
+                  </span>
+                </div> 
             </div>
           </div>
           <!-- / Configit -->
@@ -2917,26 +3089,59 @@
 
               <div class="md:pr-10">
                 <h3 class="mb-4 md:absolute md:right-4 md:top-4 md:bottom-4 md:mb-0 font-pcb md:text-sideways text-xs text-white uppercase">Autonomic Co-op</h3>
-                <p class="text-gray-200">Autonomic were looking for developers to help them with some work they were doing on a Drupal based CRM application for an activist organisation. I worked mainly on styling the theme and some minor php edits.</p>
-                <p class="text-gray-200 mt-4">I've since then become a member of Autonomic, working on projects including setting up a MediaWiki server via Ansible.</p>
+                <p class="text-gray-200">Autonomic are a worker co-operative of web developers who were looking for help with some work they were doing on a Drupal based CRM application for an activist organisation. 
+                  <a href="#bio">I love co-ops</a> so I was really interested in being involved.</p>
+                <p class="text-gray-200 mt-4">Since then I've picked up more work from them, working on projects such as setting up a MediaWiki server via Ansible, 
+                  creating quotes and proposals for new work, and WordPress plugin and theme development.
+                </p>
               </div>
-              <div class="mt-4 -mx-4 -mb-4 p-4 pt-2 flex flex-wrap items-baseline border-t border-gray-700">
+              <div class="mt-4 -mx-4 -mb-4 p-4 pt-2 flex flex-wrap items-baseline border-t border-gray-900">
+                <h4 class="w-full text-xs text-gray-300 uppercase tracking-wider mb-2 mt-2">Experience</h4>
+                <span class="pill-dark">
+                  Agile
+                </span>
+                <span class="pill-dark">
+                  Server-side development
+                </span>
+                <span class="pill-dark">
+                  Client-side development
+                </span>
+                <span class="pill-dark">
+                  Database design
+                </span>
+                <span class="pill-dark">
+                  Software architecture
+                </span>
+                <span class="pill-dark">
+                  Business analysis
+                </span>
+                <span class="pill-dark">
+                  Requirements gathering
+                </span>
+                <span class="pill-dark">
+                  Estimation and quotes
+                </span>
+                <span class="pill-dark">
+                  Stakeholder meetings
+                </span>
+              </div>
+              <div class="mt-4 -mx-4 -mb-4 p-4 pt-2 flex flex-wrap items-baseline border-t border-gray-900">
                 <h4 class="w-full text-xs text-gray-300 uppercase tracking-wider mb-2 mt-2">Technologies</h4>
-                <a href="#" class="pill-dark">
+                <span class="pill-dark">
                   <svg><use href="#html"></use></svg>HTML
-                </a>
-                <a href="#" class="pill-dark">
+                </span>
+                <span class="pill-dark">
                   <svg><use href="#css"></use></svg>CSS
-                </a>
-                <a href="#" class="pill-dark">
+                </span>
+                <span class="pill-dark">
                   <svg><use href="#php"></use></svg>PHP
-                </a>
-                <a href="#" class="pill-dark">
+                </span>
+                <span class="pill-dark">
                   <svg><use href="#wordpress"></use></svg>WordPress
-                </a>
-                <a href="#" class="pill-dark">
+                </span>
+                <span class="pill-dark">
                   <svg><use href="#mysql"></use></svg>MySQL
-                </a>
+                </span>
               </div>
             </div>
           </div>
@@ -3196,25 +3401,65 @@
 
               <div class="md:pr-10">
                 <h3 class="mb-4 md:absolute md:right-4 md:top-4 md:bottom-4 md:mb-0 font-pcb md:text-sideways text-xs text-white uppercase">Co-op Web</h3>
-                <p class="text-gray-200">Insert stuff here.</p>
+                <p class="text-gray-200">Co-op Web is another software co-operative, I've been a member for nearly 3 years now. They use quite a range of technologies, but I've
+                  been mainly focusing on WordPress development.</p>
+                <p class="text-gray-200 mt-4">I've worked on a number of projects, including building a theme and set of custom Gutenberg blocks using React,
+                   a widget system architected in a similar way that sits on top of a third party theme instead of Gutenberg, lots of theme development, supporting legacy systems 
+                   fixing bugs and adding new features, and database migration.</p>
               </div>
-              <div class="mt-4 -mx-4 -mb-4 p-4 pt-2 flex flex-wrap items-baseline border-t border-gray-700">
+              <div class="mt-4 -mx-4 -mb-4 p-4 pt-2 flex flex-wrap items-baseline border-t border-gray-900">
+                <h4 class="w-full text-xs text-gray-300 uppercase tracking-wider mb-2 mt-2">Experience</h4>
+                <span class="pill-dark">
+                  Agile
+                </span>
+                <span class="pill-dark">
+                  Server-side development
+                </span>
+                <span class="pill-dark">
+                  Client-side development
+                </span>
+                <span class="pill-dark">
+                  Database design
+                </span>
+                <span class="pill-dark">
+                  Software architecture
+                </span>
+                <span class="pill-dark">
+                  Business analysis
+                </span>
+                <span class="pill-dark">
+                  Requirements gathering
+                </span>
+                <span class="pill-dark">
+                  Estimation and quotes
+                </span>
+                <span class="pill-dark">
+                  Stakeholder meetings
+                </span>
+              </div>
+              <div class="mt-4 -mx-4 -mb-4 p-4 pt-2 flex flex-wrap items-baseline border-t border-gray-900">
                 <h4 class="w-full text-xs text-gray-300 uppercase tracking-wider mb-2 mt-2">Technologies</h4>
-                <a href="#" class="pill-dark">
+                <span class="pill-dark">
                   <svg><use href="#html"></use></svg>HTML
-                </a>
-                <a href="#" class="pill-dark">
+                </span>
+                <span class="pill-dark">
                   <svg><use href="#css"></use></svg>CSS
-                </a>
-                <a href="#" class="pill-dark">
+                </span>
+                <span class="pill-dark">
+                  <svg><use href="#javascript"></use></svg>Javascript
+                </span>
+                <span class="pill-dark">
+                  <svg><use href="#react"></use></svg>React
+                </span>
+                <span class="pill-dark">
                   <svg><use href="#php"></use></svg>PHP
-                </a>
-                <a href="#" class="pill-dark">
+                </span>
+                <span class="pill-dark">
                   <svg><use href="#wordpress"></use></svg>WordPress
-                </a>
-                <a href="#" class="pill-dark">
+                </span>
+                <span class="pill-dark">
                   <svg><use href="#mysql"></use></svg>MySQL
-                </a>
+                </span>
               </div>
             </div>
           </div>
@@ -3294,7 +3539,7 @@
                     <use href="/static/img/font-awesome-solid.svg#house-user"></use>
                   </svg>
                 </div>
-                <p class="">I'm currently involved in a <a href="https://stirchley.coop" class="text-orange-300 underline hover:no-underline">co-operative housing project</a> which 
+                <p class="">I'm currently involved in a <a href="https://stirchley.coop" class="text-orange-300 underline hover:no-underline">co-operative housing project<svg class="ml-1 h-4 w-4 inline-block relative -top-0.5 fill-current"><use href="/static/img/font-awesome-solid.svg#external-link-square-alt"></use></svg></a> which 
                   is building a block of flats that will be co-operatively owned and run by its tenants.
                 </p>
               </div>
@@ -3349,7 +3594,7 @@
                     <use href="/static/img/font-awesome-brands.svg#stack-overflow"></use>
                   </svg>
                 </div>
-                <p class="">I've been <a class="text-red-400 underline hover:no-underline" href="https://stackoverflow.com/users/story/136166">active on StackOverflow</a> for over 12 years. I've also got a <a class="text-red-400 underline hover:no-underline" href="https://stackoverflow.com/users/story/136166">Developer story</a> - did I mention already I'm open to job offers?
+                <p class="">I've been <a class="text-red-400 underline hover:no-underline" href="https://stackoverflow.com/users/136166/stusherwin?tab=profile">active on StackOverflow<svg class="ml-1 h-4 w-4 inline-block relative -top-0.5 fill-current"><use href="/static/img/font-awesome-solid.svg#external-link-square-alt"></use></svg></a> for over 12 years. I've also got a <a class="text-red-400 underline hover:no-underline" href="https://stackoverflow.com/users/story/136166">Developer story<svg class="ml-1 h-4 w-4 inline-block relative -top-0.5 fill-current"><use href="/static/img/font-awesome-solid.svg#external-link-square-alt"></use></svg></a> - did I mention already I'm open to job offers?
                 </p>
               </div>
             </div>
@@ -3361,12 +3606,12 @@
                   </svg>
                 </div>
                 <div>
-                  <p class="">Check out my <a class="text-red-400 underline hover:no-underline" href="https://github.com/stusherwin?tab=repositories">GitHub profile</a> - lots of interesting projects there including: </p>
+                  <p class="">Check out my <a class="text-red-400 underline hover:no-underline" href="https://github.com/stusherwin?tab=repositories">GitHub profile<svg class="ml-1 h-4 w-4 inline-block relative -top-0.5 fill-current"><use href="/static/img/font-awesome-solid.svg#external-link-square-alt"></use></svg></a> - lots of interesting projects there including: </p>
                   <ul class="mt-4">
-                    <li class="ml-6 list-disc">a <a class="text-red-400 underline hover:no-underline" href="https://github.com/stusherwin/physix">solar system simulator</a> using OpenGL in Haskell</li>
-                    <li class="ml-6 list-disc">an <a class="text-red-400 underline hover:no-underline" href="https://github.com/stusherwin/android-midi">Android app for playing Midi</a> using <abbr title="Functional Reactive Programming">FRP</abbr> in Scala</li>
-                    <li class="ml-6 list-disc">another FRP app, this time to <a class="text-red-400 underline hover:no-underline" href="https://github.com/stusherwin/musix">visualise musical scales in Haskell</a></li>
-                    <li class="ml-6 list-disc"><a class="text-red-400 underline hover:no-underline" href="https://github.com/stusherwin/stusherwin-net">this website</a></li>
+                    <li class="ml-6 list-disc">a <a class="text-red-400 underline hover:no-underline" href="https://github.com/stusherwin/physix">solar system simulator<svg class="ml-1 h-4 w-4 inline-block relative -top-0.5 fill-current"><use href="/static/img/font-awesome-solid.svg#external-link-square-alt"></use></svg></a> using OpenGL in Haskell</li>
+                    <li class="ml-6 list-disc">an <a class="text-red-400 underline hover:no-underline" href="https://github.com/stusherwin/android-midi">Android app for playing Midi<svg class="ml-1 h-4 w-4 inline-block relative -top-0.5 fill-current"><use href="/static/img/font-awesome-solid.svg#external-link-square-alt"></use></svg></a> using <abbr title="Functional Reactive Programming">FRP</abbr> in Scala</li>
+                    <li class="ml-6 list-disc">another FRP app, this time to <a class="text-red-400 underline hover:no-underline" href="https://github.com/stusherwin/musix">visualise musical scales in Haskell<svg class="ml-1 h-4 w-4 inline-block relative -top-0.5 fill-current"><use href="/static/img/font-awesome-solid.svg#external-link-square-alt"></use></svg></a></li>
+                    <li class="ml-6 list-disc"><a class="text-red-400 underline hover:no-underline" href="https://github.com/stusherwin/stusherwin-net">this website<svg class="ml-1 h-4 w-4 inline-block relative -top-0.5 fill-current"><use href="/static/img/font-awesome-solid.svg#external-link-square-alt"></use></svg></a></li>
                   </ul>
                 </div>
               </div>

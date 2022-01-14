@@ -239,6 +239,7 @@ body {
   }
 }
 
+/*
 #menu {
   &::before {
     position: absolute;
@@ -255,6 +256,7 @@ body {
     @media (min-width: 1536px) { content: "2XL"; @apply bg-purple-200; }
   }
 }
+*/
 
 .fade-out {
   @apply relative h-12 overflow-hidden;
@@ -292,7 +294,7 @@ body {
 // }
 
 .pill {
-  @apply mt-2 mr-1 px-1 py-0.5 whitespace-nowrap text-gray-700 bg-gray-50 border border-gray-300 shadow-sm hover:text-black hover:underline hover:border-gray-300 hover:shadow-sm;
+  @apply mt-2 mr-2 px-1 py-0.5 whitespace-nowrap text-gray-700 bg-gray-50 border border-gray-300 shadow-sm;
 
   svg {
     @apply inline h-4 w-4 mr-1 relative -top-px;
@@ -300,11 +302,16 @@ body {
 }
 
 .pill-dark {
-  @apply mt-2 mr-2 px-1 py-0.5 whitespace-nowrap border border-gray-900 shadow bg-gray-700 text-gray-200 hover:text-white hover:underline;
+  @apply mt-2 mr-2 px-1 py-0.5 whitespace-nowrap border border-gray-900 shadow bg-gray-700 text-gray-200;
 
   svg {
     @apply inline h-5 w-5 mr-1 rounded-sm relative -top-px;
   }
+}
+
+p .pill,
+p .pill-dark {
+  @apply mx-0;
 }
 
 .pcb-ring {
