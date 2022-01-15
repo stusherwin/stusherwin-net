@@ -110,8 +110,12 @@ if (isProd === true) {
           {
             from: 'client/static/img/',
             to: 'static/img/'
-          }
-          , {
+          },
+          {
+            from: 'client/static/fonts/',
+            to: 'static/fonts/'
+          }, 
+          {
             from: 'client/static/favicon.ico',
             to: 'static/favicon.ico'
           }
